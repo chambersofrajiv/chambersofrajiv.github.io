@@ -155,22 +155,23 @@ Panipat &nbsp;|&nbsp; Delhi-NCR<br />
 <a href="tel:+919518473675">+91 95184 73675</a>
 </div>
 </div>
-<form class="inquiry-form" onsubmit="handleInquiry(event)">
+<form class="inquiry-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+<input type="hidden" name="_subject" value="New Informational Inquiry — Chambers of Rajiv" />
 <div class="form-group">
 <label for="fullName">Full Name *</label>
-<input type="text" id="fullName" required placeholder="Enter your full name" />
+<input type="text" id="fullName" name="Full Name" required placeholder="Enter your full name" />
 </div>
 <div class="form-group">
 <label for="orgName">Organization / Company Name *</label>
-<input type="text" id="orgName" required placeholder="Enter company or organization name" />
+<input type="text" id="orgName" name="Organization" required placeholder="Enter company or organization name" />
 </div>
 <div class="form-group">
 <label for="officialEmail">Official Email Address *</label>
-<input type="email" id="officialEmail" required placeholder="name@company.com" />
+<input type="email" id="officialEmail" name="Official Email" required placeholder="name@company.com" />
 </div>
 <div class="form-group">
 <label for="inquiryArea">Area of Inquiry *</label>
-<select id="inquiryArea" required>
+<select id="inquiryArea" name="Area of Inquiry" required>
 <option value="Commercial Contract Governance">Commercial Contract Governance</option>
 <option value="DPDP Act Compliance">DPDP Act Compliance</option>
 <option value="Dispute Prevention">Dispute Prevention</option>
@@ -178,11 +179,10 @@ Panipat &nbsp;|&nbsp; Delhi-NCR<br />
 </div>
 <div class="form-group">
 <label for="briefContext">Brief Context (Optional)</label>
-<textarea id="briefContext" rows="3" placeholder="Provide a concise overview of your query"></textarea>
+<textarea id="briefContext" name="Brief Context" rows="3" placeholder="Provide a concise overview of your query"></textarea>
 </div>
 <button type="submit" class="btn-submit">Submit Informational Inquiry</button>
-</form>
-</div>
+</form></div>
 </div>
 </section>
 </main>
