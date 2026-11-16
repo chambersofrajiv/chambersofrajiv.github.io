@@ -195,5 +195,6 @@ function acceptDisclaimer(){sessionStorage.setItem("bci_disclaimer_accepted","tr
 function exitSite(){window.location.href="https://www.google.com";}
 function handleInquiry(e){e.preventDefault();var name=document.getElementById("fullName").value.trim();var org=document.getElementById("orgName").value.trim();var email=document.getElementById("officialEmail").value.trim();var area=document.getElementById("inquiryArea").value;var context=document.getElementById("briefContext").value.trim();var subject=encodeURIComponent("Informational Inquiry: "+area+" — "+org);var body=encodeURIComponent("Name: "+name+"\nOrganization: "+org+"\nOfficial Email: "+email+"\nArea of Inquiry: "+area+"\n\nBrief Context:\n"+(context||"N/A"));window.location.href="mailto:adv.rajiv1987@gmail.com?subject="+subject+"&body="+body;}
 </script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "39a2a5a894cb431f8c3c1060d2ee71f5"}'></script><!-- End Cloudflare Web Analytics -->  
 </body>
 </html>
